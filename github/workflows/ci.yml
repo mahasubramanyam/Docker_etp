@@ -1,4 +1,4 @@
-name:matrix_strategy_CI_CD_pipeline
+name: matrix_strategy_CI_CD_pipeline
 on:
   push:
     branches: [ main ]
