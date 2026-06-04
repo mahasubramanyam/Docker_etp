@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  build:
+  build-test:
     runs-on: eclipse-temurin:17
     strategy:
       matrix:
