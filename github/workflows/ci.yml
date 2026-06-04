@@ -1,0 +1,29 @@
+name:matrix_strategy_CI_CD_pipeline
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: eclipse-temurin:17
+    strategy:
+      matrix:
+        java-version: [11,17,21]
+      steps:
+        -name:checkout
+         uses:actions/checkout@v2
+        -name:setup JAVA
+         uses:actions/
+        -name:check JAVA version
+         run:actions
+        -name:build with maven
+         run: mvn clean compile
+
+        
+        
+          
+
+
+
+
